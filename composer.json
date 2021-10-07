@@ -1,0 +1,14 @@
+{
+    "name": "fitzage/optimus-bard",
+    "autoload": {
+        "psr-4": {
+            "Fitzage\\OptimusBard\\": "src"
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "Optimus Bard",
+            "description": "Search transformer for Statamic Bard fields"
+        }
+    }
+}
