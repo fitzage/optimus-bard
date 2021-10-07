@@ -1,5 +1,9 @@
 {
     "name": "fitzage/optimus-bard",
+    "description": "Optimus Bard takes the content from a Statamic Bard field and transforms it into a string when updating your search index",
+    "require": {
+      "php": ">=7.4"
+    },
     "autoload": {
         "psr-4": {
             "Fitzage\\OptimusBard\\": "src"
