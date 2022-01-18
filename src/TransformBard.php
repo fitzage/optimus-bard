@@ -40,7 +40,8 @@ class TransformBard
         $noSpacePeriod = str_replace(' .', '.', $noNbsp);
         $noComma = str_replace(',','',$noSpacePeriod);
         $noAmpEntity = str_replace('&amp;', '&', $noComma);
+        $notTooBig = str_limit($noAmpEntity, 90000);
 
-        return $noAmpEntity;
+        return $notTooBig;
     }
 }
