@@ -23,10 +23,12 @@ class TransformBard
             global $setTypes;
             $type = Arr::get($field, 'type');
             if (in_array($type, $setTypes)) {
-                $text = Arr::get($field, 'text')->raw();
-                $text = Markdown::parse($text);
+                if (! is_string($text = Arr::get($field, 'text'))) {
+                    $text = $text->raw();
+                }
+                $parsedText = Markdown::parse($text);
 
-                return $text;
+                return $parsedText;
             }
         })->all();
 
