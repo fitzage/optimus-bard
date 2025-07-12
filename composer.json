@@ -1,8 +1,10 @@
 {
     "name": "fitzage/optimus-bard",
     "description": "Optimus Bard takes the content from a Statamic Bard field and transforms it into a string when updating your search index",
+    "version": "2.0.0",
     "require": {
-      "php": ">=7.4"
+        "php": "^8.2",
+        "statamic/cms": "^5.0"
     },
     "autoload": {
         "psr-4": {
@@ -12,7 +14,15 @@
     "extra": {
         "statamic": {
             "name": "Optimus Bard",
-            "description": "Search transformer for Statamic Bard fields"
+            "description": "Advanced search transformer for Statamic Bard fields with nested content support"
         }
-    }
+    },
+    "keywords": ["statamic", "search", "bard", "algolia", "transformer", "content-extraction"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Matt Fitzsimmons",
+            "email": "your-email@example.com"
+        }
+    ]
 }
