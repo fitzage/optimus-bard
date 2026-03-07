@@ -3,7 +3,7 @@
     "description": "Optimus Bard takes the content from a Statamic Bard field and transforms it into a string when updating your search index",
     "require": {
         "php": "^8.2",
-        "statamic/cms": "^5.0"
+        "statamic/cms": "^5.0 || ^6.0"
     },
     "autoload": {
         "psr-4": {
